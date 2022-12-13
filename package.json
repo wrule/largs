@@ -1,0 +1,8 @@
+{
+  "name": "largs",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/wrule/largs.git",
+  "license": "MIT",
+  "private": false
+}
