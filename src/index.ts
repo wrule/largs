@@ -15,8 +15,10 @@ function parse(args: string[]) {
         case 'NaN': result[key] = NaN; break;
         case 'true': result[key] = true; break;
         case 'false': result[key] = false; break;
+        case 'Infinity': result[key] = Infinity; break;
+        case '-Infinity': result[key] = -Infinity; break;
         default: {
-          const num = parseFloat(argv);
+          const num = Number(argv);
           if (!isNaN(num)) result[key] = num;
           else result[key] = argv;
         };
