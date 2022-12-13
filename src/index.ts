@@ -1,3 +1,4 @@
+export
 function parse(args: string[]) {
   const result: any = { };
   let opend = false;
@@ -25,20 +26,24 @@ function parse(args: string[]) {
   return result;
 }
 
+export
 function parse_str(str: string) {
   return parse(str.split(/\s+/).filter((item) => item));
 }
 
+export
 function unparse(object: any) {
   const result: string[] = [];
   Object.entries(object).forEach(([key, value]) => result.push(`-${key}`, `${value}`));
   return result;
 }
 
+export
 function unparse_str(object: any) {
   return unparse(object).join(' ');
 }
 
+export
 function file_name(path_str: string) {
   const segs = path_str.replace(/\\/g, '/').split(/\/+/);
   return segs[segs.length - 1];
