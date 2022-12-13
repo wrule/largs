@@ -9,5 +9,8 @@
   },
   "repository": "https://github.com/wrule/largs.git",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@types/node": "^18.11.14"
+  }
 }
