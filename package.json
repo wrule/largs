@@ -1,5 +1,5 @@
 {
-  "name": "@litebot/args",
+  "name": "@wrule/args",
   "version": "0.1.2",
   "main": "dist/index.js",
   "scripts": {
