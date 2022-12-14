@@ -18,7 +18,7 @@ function parse(args: string[]) {
         case 'Infinity': result[key] = Infinity; break;
         case '-Infinity': result[key] = -Infinity; break;
         default: {
-          const num = Number(argv);
+          const num = argv.trim() ? Number(argv) : NaN;
           if (!isNaN(num)) result[key] = num;
           else result[key] = argv;
         };
