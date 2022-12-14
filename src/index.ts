@@ -29,11 +29,6 @@ function parse(args: string[]) {
 }
 
 export
-function parse_str(str: string) {
-  return parse(str.split(/\s+/).filter((item) => item));
-}
-
-export
 function unparse(object: any) {
   const result: string[] = [];
   Object.entries(object).forEach(([key, value]) => result.push(`-${key}`, `${value}`));
