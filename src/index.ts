@@ -31,7 +31,7 @@ function parse(args: string[]) {
 export
 function stringify(object: any) {
   return Object.entries(object)
-    .map(([key, value]) => `-${key} ${value}`)
+    .map(([key, value]) => `-${key} ${`${value}`.trim() ? value : `'${value}'`}`)
     .join(' ');
 }
 
