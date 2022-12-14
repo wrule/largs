@@ -29,10 +29,8 @@ function parse(args: string[]) {
 }
 
 export
-function unparse(object: any) {
-  const result: string[] = [];
-  Object.entries(object).forEach(([key, value]) => result.push(`-${key}`, `${value}`));
-  return result;
+function stringify(object: any) {
+  return Object.entries(object).forEach(([key, value]) => result.push(`-${key}`, `${value}`));
 }
 
 export
