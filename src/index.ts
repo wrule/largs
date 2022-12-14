@@ -30,7 +30,9 @@ function parse(args: string[]) {
 
 export
 function stringify(object: any) {
-  return Object.entries(object).forEach(([key, value]) => result.push(`-${key}`, `${value}`));
+  return Object.entries(object)
+    .map(([key, value]) => `-${key} ${value}`)
+    .join(' ');
 }
 
 export
