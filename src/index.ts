@@ -36,11 +36,6 @@ function unparse(object: any) {
 }
 
 export
-function unparse_str(object: any) {
-  return unparse(object).join(' ');
-}
-
-export
 function file_name(path_str: string) {
   const segs = path_str.replace(/\\/g, '/').split(/\/+/);
   return segs[segs.length - 1];
